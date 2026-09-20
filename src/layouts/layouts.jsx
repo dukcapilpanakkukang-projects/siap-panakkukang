@@ -200,10 +200,10 @@ export function DashboardLayout({ children, menu, title, subtitle }) {
           <div className="flex items-center gap-2.5 shrink-0">
             <div className="text-right leading-tight">
               <div className="text-[10px] md:text-xs font-extrabold tracking-wide text-slate-800 whitespace-nowrap">KKL GEL XIII 2026</div>
-              <div className="text-[9px] md:text-[10px] font-semibold tracking-wide text-slate-500 whitespace-nowrap">UNIVERSITAS DIPA MAKASSAR</div>
+              <div className="text-[10px] md:text-xs font-extrabold tracking-wide text-slate-800 whitespace-nowrap">UNIVERSITAS DIPA MAKASSAR</div>
             </div>
-            <span aria-hidden="true" className="blur-in-loop w-px self-stretch bg-slate-300/80" />
-            <img src={LOGO_UNDIPA} alt="Logo KKL Undipa" className="blur-in-loop h-9 md:h-10 w-auto object-contain" />
+            <span aria-hidden="true" className="w-px self-stretch bg-slate-300/80" />
+            <img src={LOGO_UNDIPA} alt="Logo KKL Undipa" className="h-9 md:h-10 w-auto object-contain" />
           </div>
         </div>
         <div className="p-4 md:p-6">{children}</div>
