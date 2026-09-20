@@ -4,5 +4,7 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/siap-panakkukang/',
+  // BASE_PATH='/' saat build untuk InfinityFree (subdomain root);
+  // default '/siap-panakkukang/' untuk GitHub Pages.
+  base: process.env.BASE_PATH || '/siap-panakkukang/',
 })
