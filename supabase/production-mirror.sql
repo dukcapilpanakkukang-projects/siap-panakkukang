@@ -55,7 +55,7 @@ on conflict (key) do update
   set title = excluded.title, content = excluded.content, updated_at = now();
 
 insert into public.display_contents (key, title, content) values
-  ('rest','Gambar Istirahat','{"enabled":true,"start":"00:00","end":"13:00","image":"rest/1789714726343-ChatGPT Image 16 Sep 2026, 12.32.53.png","friday":{"enabled":true,"start":"11:30","end":"13:30","image":"rest/1789714798256-WhatsApp Image 2026-09-18 at 14.59.35.jpeg"}}')
+  ('rest','Gambar Istirahat','{"enabled":true,"start":"12:00","end":"13:00","image":"rest/1789714726343-ChatGPT Image 16 Sep 2026, 12.32.53.png","friday":{"enabled":true,"start":"11:30","end":"13:30","image":"rest/1789714798256-WhatsApp Image 2026-09-18 at 14.59.35.jpeg"}}')
 on conflict (key) do update
   set title = excluded.title, content = excluded.content, updated_at = now();
 
